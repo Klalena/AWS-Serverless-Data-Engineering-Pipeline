@@ -5,17 +5,17 @@ This is a repository for the Duke University Cloud Computing course project on S
 
 Below are the steps of how to build this pipeline in AWS: 
 
-​		1️⃣ Create a new iCloud9 environment dedicated to this project. 
+1️⃣ Create a new iCloud9 environment dedicated to this project. 
 
 🤔 Need a refresher? Please check this [repo](https://github.com/noahgift/awslambda/blob/master/beginners_guide_aws_lambda.ipynb). 
 
 ⚠️ Make sure to use `name` as your unique id for your items in the `fang` table. 
 
-​		2️⃣ Create  a `fang` table in DynamoDB and SQS queue. 
+2️⃣ Create  a `fang` table in DynamoDB and SQS queue. 
 
 You can check how to do it [here](https://www.youtube.com/watch?v=zXxdbtamoa4). 
 
-​		3️⃣ Build *producer* Lambda Function 
+3️⃣ Build *producer* Lambda Function 
 
 1. In iCloud9, initialize a serverless application with [SAM template](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-init.html): 
 
@@ -73,15 +73,15 @@ You can check how to do it [here](https://www.youtube.com/watch?v=zXxdbtamoa4).
     cd .. 
     ```
 
-    4️⃣ Create an S3 bucket and note its name
+4️⃣ Create an S3 bucket and note its name
 
-    5️⃣ Build *consumer* Lambda Function 
+5️⃣ Build *consumer* Lambda Function 
 
 Repeat steps in 3️⃣. 
 
 ⚠️ In #3 when you add the code for a consumer app to `app.py`, make sure to replace `bucket="fangsentiment"` with the name of your S3 bucket. 
 
-​		6️⃣ Add triggers to Lambda Functions 
+6️⃣ Add triggers to Lambda Functions 
 
 🤔 Not sure how to do it? Check out this [video](https://www.youtube.com/watch?v=zXxdbtamoa4) (start times are noted below): 
 
@@ -89,7 +89,7 @@ Producer Lambda Function: *CloudWatchEvent*(30 min)
 
 Consumer Lambda Function: *SQS* (42 min)
 
-​		7️⃣ If all goes well, you will see sentiment results in your S3 bucket: 
+7️⃣ If all goes well, you will see sentiment results in your S3 bucket: 
 
 ![s3](./images/s3.png)
 
