@@ -1,7 +1,7 @@
 # AWS Data Engineering Pipeline 
 This is a repository for the Duke University Cloud Computing course project on Serverless Data Engineering Pipeline. For this project, I recreated the below pipeline in iCloud9 (reference: https://github.com/noahgift/awslambda): 
 
-![pipeline](./images/pipeline.png=100x100)
+<img src="./images/pipeline.png" alt="drawing" width="80"/>
 
 ```html
 <img src="./images/pipeline.png" alt="drawing" width="200"/>
