@@ -1,0 +1,11 @@
+version = 0.1
+[y]
+[y.deploy]
+[y.deploy.parameters]
+stack_name = "consumer "
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-e21814b3k5ge"
+s3_prefix = "consumer "
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["HelloWorldFunction=967494884572.dkr.ecr.us-east-1.amazonaws.com/consumer"]
